@@ -1,6 +1,42 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { Bus, MapPin, ShieldCheck } from "lucide-react";
+
+const routes = [
+  {
+    routeNumber: 1,
+    area: "K.N. Road, Housing Board Colony",
+    busNumber: "AP 37 A 1234",
+  },
+  {
+    routeNumber: 2,
+    area: "Jubilee Road, Ayyappa Nagar",
+    busNumber: "AP 37 B 5678",
+  },
+  {
+    routeNumber: 3,
+    area: "Ganesh Nagar, S.N. Puram",
+    busNumber: "AP 37 C 9012",
+  },
+  {
+    routeNumber: 4,
+    area: "Town Hall, Weavers Colony",
+    busNumber: "AP 37 D 3456",
+  },
+  {
+    routeNumber: 5,
+    area: "Penta Road, Subba Rao Peta",
+    busNumber: "AP 37 E 7890",
+  },
+];
 
 const Transport = () => {
   return (
@@ -44,6 +80,30 @@ const Transport = () => {
             </CardContent>
           </Card>
         </div>
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-3xl font-bold text-primary mb-6 text-center">Bus Routes & Details</h2>
+        <Card className="overflow-hidden">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[100px]">Route No.</TableHead>
+                <TableHead>Areas Covered</TableHead>
+                <TableHead className="text-right">Bus No.</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {routes.map((route) => (
+                <TableRow key={route.routeNumber}>
+                  <TableCell className="font-medium">{route.routeNumber}</TableCell>
+                  <TableCell>{route.area}</TableCell>
+                  <TableCell className="text-right">{route.busNumber}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </Card>
       </div>
     </div>
   );
