@@ -9,7 +9,7 @@ export const Breadcrumbs = () => {
   if (pathnames.length === 0) return null;
 
   return (
-    <div className="bg-beige py-3 mt-16">
+    <div className="bg-beige py-3">
       <div className="container-width section-padding">
         <nav className="flex items-center space-x-2 text-sm">
           <Link to="/" className="flex items-center text-gray-600 hover:text-primary transition-colors duration-200">

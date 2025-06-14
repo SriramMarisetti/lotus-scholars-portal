@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="container-width section-padding">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
