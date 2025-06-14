@@ -1,11 +1,62 @@
 
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Users, Award, MapPin } from "lucide-react";
-import { bannerContent, schoolInfo } from "@/data/content";
+import { bannerContent } from "@/data/content";
+import { useState, useEffect } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  const [admissionsDialogOpen, setAdmissionsDialogOpen] = useState(false);
+
+  useEffect(() => {
+    // Show the pop-up once per session.
+    const hasSeenPopup = sessionStorage.getItem('hasSeenAdmissionPopup');
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setAdmissionsDialogOpen(true);
+        sessionStorage.setItem('hasSeenAdmissionPopup', 'true');
+      }, 1500); // Delay to allow page to load
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
+      <Dialog open={admissionsDialogOpen} onOpenChange={setAdmissionsDialogOpen}>
+        <DialogContent className="sm:max-w-[480px]">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold text-primary">Admissions Are Open!</DialogTitle>
+            <DialogDescription className="pt-2">
+              Secure your child's place at Lotus High School for the upcoming academic year. We are now accepting applications.
+            </DialogDescription>
+          </DialogHeader>
+          
+          <p className="text-gray-600">
+            Don't miss the opportunity for your child to join our community of learners and achievers.
+          </p>
+
+          <DialogFooter className="flex-col sm:flex-row sm:justify-between gap-2 mt-4">
+            <Button variant="outline" onClick={() => setAdmissionsDialogOpen(false)} className="w-full sm:w-auto">
+              Close
+            </Button>
+            <Link to="/admissions" className="w-full sm:w-auto" onClick={() => setAdmissionsDialogOpen(false)}>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                <ArrowRight className="mr-2 h-4 w-4" />
+                Apply Now
+              </Button>
+            </Link>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
