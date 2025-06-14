@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import AdminPanel from "./pages/AdminPanel";
 import Admissions from "./pages/Admissions";
 import Academics from "./pages/Academics";
+import Advantages from "./pages/Advantages";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -27,7 +28,7 @@ const App = () => (
             <Route index element={<Index />} />
             <Route path="admissions/*" element={<Admissions />} />
             <Route path="academics/*" element={<Academics />} />
-            <Route path="advantages/*" element={<div className="min-h-screen pt-24 section-padding"><div className="container-width"><h1 className="text-4xl font-bold text-primary mb-8">Advantages</h1><p className="text-gray-600">Information about our school advantages will be displayed here.</p></div></div>} />
+            <Route path="advantages/*" element={<Advantages />} />
             <Route path="gallery/*" element={<Gallery />} />
             <Route path="notifications/*" element={<div className="min-h-screen pt-24 section-padding"><div className="container-width"><h1 className="text-4xl font-bold text-primary mb-8">Notifications</h1><p className="text-gray-600">School notifications and announcements will be displayed here.</p></div></div>} />
             <Route path="disclosure/*" element={<div className="min-h-screen pt-24 section-padding"><div className="container-width"><h1 className="text-4xl font-bold text-primary mb-8">Mandatory Public Disclosure</h1><p className="text-gray-600">Public disclosure information will be displayed here.</p></div></div>} />
