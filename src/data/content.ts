@@ -28,7 +28,7 @@ export const navigationItems = [
   },
   {
     title: "Academics",
-    href: "/academics",
+    href: "/",
     children: [
       { title: "Faculty", href: "/academics/faculty" },
       { title: "School Management Committee", href: "/academics/management" },
@@ -37,7 +37,7 @@ export const navigationItems = [
   },
   {
     title: "Advantages",
-    href: "/advantages",
+    href: "/",
     children: [
       { title: "Lab Resources", href: "/advantages/labs" },
       { title: "Projects and Field Trips", href: "/advantages/projects" },
@@ -50,7 +50,7 @@ export const navigationItems = [
   },
   {
     title: "Gallery",
-    href: "/gallery",
+    href: "/",
     children: [
       { title: "Photos", href: "/gallery/photos" },
       { title: "Videos", href: "/gallery/videos" }
@@ -58,7 +58,7 @@ export const navigationItems = [
   },
   {
     title: "Notifications",
-    href: "/notifications",
+    href: "/",
     children: [
       { title: "TC's", href: "/notifications/tcs" },
       { title: "Events & News", href: "/notifications/events" }
@@ -66,7 +66,7 @@ export const navigationItems = [
   },
   {
     title: "Mandatory Public Disclosure",
-    href: "/disclosure",
+    href: "/",
     children: [
       { title: "PDF Download", href: "/disclosure/pdf" },
       { title: "General Information", href: "/disclosure/general" },
