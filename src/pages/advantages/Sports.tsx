@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Medal, Dumbbell, Trophy } from "lucide-react";
 
@@ -14,7 +13,8 @@ const Sports = () => {
     <div className="container-width section-padding animate-fade-in">
       <h1 className="text-4xl font-bold text-primary mb-4">Sports</h1>
       <p className="text-lg text-gray-600 mb-8">
-        Promoting physical fitness, teamwork, and sportsmanship.
+        Sports are the ideal way of releasing energy creatively. At Lotus High School, we emphasize sports activities for the overall physical development of every child.
+        Activities like volleyball, basketball, and athletics help tone muscles, improve coordination, and build team spirit, while games like chess sharpen mental ability.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -22,21 +22,21 @@ const Sports = () => {
           <CardHeader><Medal className="mx-auto w-12 h-12 text-primary" /></CardHeader>
           <CardContent>
             <CardTitle>Excellent Coaching</CardTitle>
-            <p className="text-gray-600 mt-2">Professional coaches for all major sports.</p>
+            <p className="text-gray-600 mt-2">An efficient sports master manages all activities with skill and dedication, making sports a favorite among students.</p>
           </CardContent>
         </Card>
         <Card className="text-center">
           <CardHeader><Dumbbell className="mx-auto w-12 h-12 text-primary" /></CardHeader>
           <CardContent>
             <CardTitle>Top-Notch Facilities</CardTitle>
-            <p className="text-gray-600 mt-2">Well-maintained courts and grounds.</p>
+            <p className="text-gray-600 mt-2">Well-maintained courts, grounds, and indoor spaces ensure students enjoy and benefit from their physical activities.</p>
           </CardContent>
         </Card>
         <Card className="text-center">
           <CardHeader><Trophy className="mx-auto w-12 h-12 text-primary" /></CardHeader>
           <CardContent>
             <CardTitle>Competitive Spirit</CardTitle>
-            <p className="text-gray-600 mt-2">Regular inter-school and intra-school tournaments.</p>
+            <p className="text-gray-600 mt-2">Students regularly participate in inter-house and inter-school competitions, fostering confidence and discipline.</p>
           </CardContent>
         </Card>
       </div>

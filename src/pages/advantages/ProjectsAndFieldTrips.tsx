@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Map, Microscope } from "lucide-react";
 
@@ -21,21 +20,25 @@ const ProjectsAndFieldTrips = () => {
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center"><Microscope className="mr-2" /> Hands-On Projects</CardTitle>
+              <CardTitle className="flex items-center">
+                <Microscope className="mr-2" /> Hands-On Projects
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                We believe in learning by doing. Our curriculum integrates various projects that encourage students to apply theoretical knowledge to real-world problems, fostering critical thinking and creativity.
+                At school, project work goes beyond regular assignments. It involves independent research using libraries, internet, or field data collection. These projects result in detailed reports or dissertations, covering inception, analysis, findings, and conclusions—nurturing analytical and research skills.
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center"><Map className="mr-2" /> Educational Field Trips</CardTitle>
+              <CardTitle className="flex items-center">
+                <Map className="mr-2" /> Educational Field Trips
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                Regular field trips to historical sites, museums, and industrial centers provide students with invaluable experiences, broadening their horizons and deepening their understanding of various subjects.
+                Field trips offer students immersive learning opportunities. From historical landmarks to industrial visits, these experiences provide first-hand exposure to new environments, enriching classroom knowledge and creating deeper understanding beyond textbooks.
               </p>
             </CardContent>
           </Card>

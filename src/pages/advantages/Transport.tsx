@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Table,
@@ -13,28 +12,28 @@ import { Bus, MapPin, ShieldCheck } from "lucide-react";
 const routes = [
   {
     routeNumber: 1,
-    area: "K.N. Road, Housing Board Colony",
-    busNumber: "AP 37 A 1234",
+    area: "Pentapadu Road, Bhimavaram Bypass",
+    busNumber: "AP 37 X 1001",
   },
   {
     routeNumber: 2,
-    area: "Jubilee Road, Ayyappa Nagar",
-    busNumber: "AP 37 B 5678",
+    area: "Narasimhapuram, Vinayaka Temple Area",
+    busNumber: "AP 37 X 1002",
   },
   {
     routeNumber: 3,
-    area: "Ganesh Nagar, S.N. Puram",
-    busNumber: "AP 37 C 9012",
+    area: "Satyavathi Nagar, SBI Colony",
+    busNumber: "AP 37 X 1003",
   },
   {
     routeNumber: 4,
-    area: "Town Hall, Weavers Colony",
-    busNumber: "AP 37 D 3456",
+    area: "Railway Station Road, Old Bus Stand",
+    busNumber: "AP 37 X 1004",
   },
   {
     routeNumber: 5,
-    area: "Penta Road, Subba Rao Peta",
-    busNumber: "AP 37 E 7890",
+    area: "Bypass Road, Teachers Colony",
+    busNumber: "AP 37 X 1005",
   },
 ];
 
@@ -60,7 +59,10 @@ const Transport = () => {
               <CardTitle className="flex items-center"><Bus className="mr-3 text-primary" /> Modern Fleet</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>We operate a fleet of modern, well-maintained buses to ensure the comfort and safety of our students.</p>
+              <p>
+                We operate a fleet of modern, well-maintained buses to ensure the comfort and safety of our students.
+                Each bus seats 40 students and meets all Government safety standards, with first aid kits and trained attenders onboard.
+              </p>
             </CardContent>
           </Card>
           <Card>
@@ -68,7 +70,9 @@ const Transport = () => {
               <CardTitle className="flex items-center"><MapPin className="mr-3 text-primary" /> Wide Coverage</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Our buses cover an extensive network of routes throughout Tadepalligudem and surrounding areas, ensuring convenient pick-up and drop-off points.</p>
+              <p>
+                Our routes span major residential areas across Tadepalligudem, ensuring easy and convenient access for all.
+              </p>
             </CardContent>
           </Card>
           <Card>
@@ -76,14 +80,16 @@ const Transport = () => {
               <CardTitle className="flex items-center"><ShieldCheck className="mr-3 text-primary" /> Safety First</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>All buses are equipped with GPS tracking and are managed by experienced and trained staff to ensure student safety is our top priority.</p>
+              <p>
+                All buses are driven by trained professionals, and bus attendants ensure proper seating and safe travel for children throughout the journey.
+              </p>
             </CardContent>
           </Card>
         </div>
       </div>
 
       <div className="mt-16">
-        <h2 className="text-3xl font-bold text-primary mb-6 text-center">Bus Routes & Details</h2>
+        <h2 className="text-3xl font-bold text-primary mb-6 text-center">Bus Routes in Tadepalligudem</h2>
         <Card className="overflow-hidden">
           <Table>
             <TableHeader>

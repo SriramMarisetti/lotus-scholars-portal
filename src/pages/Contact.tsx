@@ -188,18 +188,30 @@ const RouteMap = () => (
         
         <div>
           <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-gray-600">Interactive Map Coming Soon</p>
+            <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977559.409759558!2d80.26823337812496!3d16.846612399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a364c914fc755c9%3A0xc3a29bbe8440db0d!2sLotus%20High%20School!5e0!3m2!1sen!2sin!4v1750412536991!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="border-0"
+              ></iframe>
+            </div>
           </div>
           
           <div className="mt-6 bg-white border border-gray-200 rounded-lg p-6">
-            <h3 className="font-semibold text-primary mb-3">Landmarks</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>• Near Government Hospital</li>
-              <li>• Opposite to Municipal Office</li>
-              <li>• 500m from Bus Stand</li>
-              <li>• Adjacent to Public Library</li>
-            </ul>
-          </div>
+          <h3 className="font-semibold text-primary mb-3">Landmarks</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>• Located in Pedatadepalli Village</li>
+            <li>• Just 1.2 km from Sujatha Nagar BRTS Road</li>
+            <li>• Behind DCB Bank, Tadepalligudem</li>
+            <li>• Close to Vikas Degree College Junction</li>
+            <li>• 10 mins from Tadepalligudem Railway Station</li>
+          </ul>
+        </div>
+
         </div>
       </div>
     </div>

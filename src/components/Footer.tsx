@@ -5,7 +5,7 @@ import { schoolInfo } from "@/data/content";
 
 export const Footer = () => {
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-navy text-white mt-28">
       <div className="container-width section-padding py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* School Info */}

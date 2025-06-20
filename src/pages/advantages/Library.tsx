@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Library as LibraryIcon, BookOpen, Clock } from "lucide-react";
 
@@ -10,7 +9,7 @@ const Library = () => {
         <h1 className="text-4xl font-bold text-primary">Library</h1>
       </div>
       <p className="text-lg text-gray-600 mb-8">
-        A gateway to knowledge and a quiet haven for readers.
+        A well-ventilated, spacious sanctuary of books and knowledge, thoughtfully curated for curious minds.
       </p>
 
       <div className="grid md:grid-cols-5 gap-8">
@@ -24,20 +23,25 @@ const Library = () => {
         <div className="md:col-span-2 space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Vast Collection</CardTitle>
+              <CardTitle>Well-Organized Sections</CardTitle>
             </CardHeader>
             <CardContent className="flex items-start">
               <BookOpen className="w-8 h-8 text-primary mr-4 flex-shrink-0" />
-              <p>Our library houses a rich collection of books, journals, and digital resources across various subjects to cater to the intellectual needs of our students.</p>
+              <p>
+                Books are systematically arranged under categories including subject books, reference books (100+), specimen books, magazines (50+), and competitive exam guides. 
+                Students can also access 10 periodicals and 8 daily newspapers like The Hindu, India Today, Frontline, and Chandamama.
+              </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Reading Environment</CardTitle>
+              <CardTitle>Reading Culture & Access</CardTitle>
             </CardHeader>
             <CardContent className="flex items-start">
               <Clock className="w-8 h-8 text-primary mr-4 flex-shrink-0" />
-              <p>We provide a serene and stimulating environment that encourages students to read, research, and expand their knowledge.</p>
+              <p>
+                With classroom distribution of The Hindu from Grades VI to X, our aim is to keep students informed and improve their reading habits. The library nurtures a love for learning and encourages independent research.
+              </p>
             </CardContent>
           </Card>
         </div>

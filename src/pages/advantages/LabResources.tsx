@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
@@ -13,8 +12,8 @@ const LabResources = () => {
   return (
     <div className="container-width section-padding animate-fade-in">
       <h1 className="text-4xl font-bold text-primary mb-4">Lab Resources</h1>
-      <p className="text-lg text-gray-600 mb-8">
-        Fostering innovation and practical skills through hands-on experience.
+      <p className="text-lg text-gray-600 mb-6">
+        Teachers cannot be with them always. Labs and library (vast books, reference materials etc.) are the logical extension of classroom learning as sound practical training develops theoretical expressions. It is ready to sow the seeds of scientific temper and mathematical skills in the mind of the students right from the impressionable age.
       </p>
       
       <div className="grid md:grid-cols-2 gap-8 items-center">
