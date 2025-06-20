@@ -8,8 +8,8 @@ export const bannerContent = {
 export const schoolInfo = {
   name: "Lotus High School",
   location: "Tadepalligudem",
-  phone: "+91 8123456789",
-  email: "info@lotushighschool.edu.in",
+  phone: "+91 9912283260",
+  email: "uslotusschool@gmail.com",
   address: "123 Education Street, Tadepalligudem, West Godavari, Andhra Pradesh 534101"
 };
 
